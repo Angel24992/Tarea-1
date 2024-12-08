@@ -1,0 +1,83 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+/* Globales */
+
+body {
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+h1, h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+}
+
+main {
+    
+    align-items: center;
+    margin: 0 auto 2rem auto;
+    width: 90%;
+}
+
+main div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    main div {
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
+
+img {
+    width: 50%;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    padding: 1rem;
+}
+
+footer p {
+    margin-top: 2rem;
+    color: white;
+}
